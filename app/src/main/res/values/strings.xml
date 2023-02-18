@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SgCamera</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="hello">Hello!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_by_camera_id">Search by camera id</string>
+    <string name="timestamp_label">timestamp:</string>
+    <string name="timestamp_value">2022-02-27</string>
+    <string name="image_label">image:</string>
+    <string name="location_label">location:</string>
+    <string name="latitude_label">latitude:</string>
+    <string name="latitude_value">1.313</string>
+    <string name="longitude_label">longitude:</string>
+    <string name="image_metadata_label">image_metadata:</string>
+    <string name="width_label">width:</string>
+    <string name="camera_id_label">camera_id:</string>
+    <string name="md5_label">md5:</string>
+    <string name="camera_id_value">1709</string>
+    <string name="height_label">height:</string>
+    <string name="set_as_favourite">Set as Favourite</string>
+</resources>

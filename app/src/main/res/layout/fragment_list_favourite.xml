@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ListFavourite"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/cameraId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="270dp"
+        android:maxWidth="450dp"
+        android:minHeight="60dp"
+        android:inputType="text"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/search_by_camera_id"
+        android:autofillHints="Search by camera id"
+        android:textColorHint="@color/grey" />
+
+    <ImageView
+        android:id="@+id/date"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cameraId"
+        android:src="@drawable/calendar_icon"
+        android:background="@color/white"
+        android:layout_alignTop="@id/cameraId"
+        android:layout_alignBottom="@id/cameraId"
+        android:layout_marginStart="10dp"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/sort"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/date"
+        android:src="@drawable/sort_icon"
+        android:layout_alignTop="@id/cameraId"
+        android:layout_alignBottom="@id/cameraId"
+        android:background="@color/white"
+        android:layout_marginStart="10dp"
+        android:clickable="true"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cameraList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sort"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        android:background="@color/white">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
